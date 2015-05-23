@@ -5,23 +5,40 @@
   <title>Lucy Bloch-Wehba</title>
 <img src="https://cloud.githubusercontent.com/assets/10148896/7785990/234ac2ce-017d-11e5-9a1d-445b8c4d75b2.jpg" width=100%>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
   <style type="text/css">
   .hero.container {
     margin-top: 5%;
-  }.hero ul {
+  }
+  .hero ul {
     list-style-position: outside;
   }
   .hero li {
     float: left;
     margin: 0 4rem 0 2rem;
-  }</style>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
-  
+  }
+  .hero h4, .hero li {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+       -moz-transform: translateX(-20px);
+         -o-transform: translateX(-20px);
+            transform: translateX(-20px);
+    -webkit-transition: all 2200ms cubic-bezier(0.075, 0.395, 0.355, 1.000);
+       -moz-transition: all 2200ms cubic-bezier(0.075, 0.395, 0.355, 1.000);
+         -o-transition: all 2200ms cubic-bezier(0.075, 0.395, 0.355, 1.000);
+            transition: all 2200ms cubic-bezier(0.075, 0.395, 0.355, 1.000); /* easeInOutExpo */
+  }
+  .hero h4.visible, .hero li.visible {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+  }
+  </style>
 </head>
 <body>
 
@@ -40,11 +57,11 @@
   </header>
 <div class="container">
   <div class="row">
-    <div class="twelve columns"><p>Lucy</p></div>
+    <div class="twelve columns"><p>Lucy Bloch-Wehba is a Brooklyn-based teacher and artist.</p></div>
   </div>
 </div>
- 
 
 </body>
 </html>
+
 
